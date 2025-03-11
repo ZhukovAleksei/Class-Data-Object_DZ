@@ -33,6 +33,7 @@ data class Post(
     val comments: Comments = Comments("Нет коментариев"),
     val likes: Likes = Likes(0),
     val views: Int = 0,
+    var origin: Post? = null
 )
 
 object WallService {
